@@ -1,0 +1,134 @@
+@import "../../../../style/variables.scss";
+
+.loading {
+  color: $text_default_light_color;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding-top: 5rem;
+  font-size: 1rem;
+  font-family: $font_default_family;
+}
+
+.formPage {
+  background-color: $backgroud-color;
+  min-height: 100vh;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+
+  .form {
+    margin: auto;
+    min-width: 16.6rem;
+    max-width: 20.6rem;
+    padding: 1rem;
+
+    h2 {
+      text-align: left;
+      color: $text_default_light_color;
+      font-size: 1rem;
+      font-family: $font_default_family;
+      padding-bottom: 1rem;
+    }
+
+    .formContainer {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 0.6rem;
+      margin: auto;
+      min-width: 16.6rem;
+      max-width: 20.6rem;
+      padding: 1.2rem;
+      padding-right: $body_padding;
+      padding-left: $body_padding;
+      text-align: center;
+
+      .detailImg {
+        background: rgb(251, 252, 70);
+        background: radial-gradient(
+          circle,
+          rgba(251, 252, 70, 1) 0%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        border-radius: $border-radius-1;
+        margin: auto;
+        width: fit-content;
+        height: 280px;
+      }
+
+      .formList {
+        align-items: center;
+        color: $text_default_dark_color;
+        font-family: $font_default_family;
+        font-size: 0.87rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: auto;
+        padding-top: 1rem;
+        width: 100%;
+        .formInputContainer {
+          width: 100%;
+          margin: auto;
+          text-align: left;
+          .formInput {
+            border: 1px solid #b9b9b9;
+            border-radius: $border-radius-1;
+            color: $text_default_dark_color;
+            font-family: $font_default_family;
+            font-size: 0.87rem;
+            margin-bottom: 0.8rem;
+            padding: 0.3rem;
+            padding-bottom: 0.1rem;
+            padding-top: 0.1rem;
+            width: 100%;
+          }
+
+          .formSelector {
+            border: 1px solid #b9b9b9;
+            border-radius: $border-radius-1;
+            color: $text_default_dark_color;
+            font-family: $font_default_family;
+            font-size: 0.87rem;
+            padding: 0.1rem;
+            padding-bottom: 0.1rem;
+            padding-top: 0.1rem;
+          }
+
+          .formImgInput {
+            width: 100%;
+          }
+        }
+        button {
+          background-color: white;
+          border: 1px solid #b9b9b9;
+          border-radius: $border-radius-1;
+          color: $text_default_light_color;
+          cursor: pointer;
+          font-family: $font_default_family;
+          font-size: 0.8rem;
+          height: 2rem;
+          margin-top: 1rem;
+          width: 8rem;
+        }
+        button:active {
+          background-color: #cecece;
+          border: 1px solid $text_default_light_color;
+          color: $text_default_dark_color;
+        }
+      }
+    }
+    .back {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      font-family: $font_default_family;
+      list-style-type: none;
+
+      a {
+        color: $text_default_dark_color;
+        text-decoration: none;
+      }
+    }
+  }
+}

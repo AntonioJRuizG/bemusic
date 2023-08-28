@@ -1,0 +1,25 @@
+@import "../../../style/variables.scss";
+
+.mainMenu {
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  padding: 0.3rem 0 0.3rem 0;
+  text-align: left;
+  width: 100%;
+
+  .mainMenuList {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9rem;
+    font-family: $font_default_family;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+
+    .mainMenuListLink {
+      color: $text_default_light_color;
+      text-decoration: none;
+    }
+  }
+}

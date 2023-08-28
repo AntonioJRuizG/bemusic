@@ -1,0 +1,56 @@
+@import "../../../../style/variables.scss";
+
+li {
+  list-style-type: none;
+}
+
+.galleryListItemButtons {
+  height: 1.7rem;
+  margin-bottom: 0.7rem;
+  text-align: right;
+
+  .cardButton {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: fit-content;
+    margin-left: 0.5rem;
+    padding: 0.2rem;
+    width: fit-content;
+  }
+}
+.galleryImgBox {
+  height: 170px;
+  margin: 0 auto;
+  margin-bottom: 0.7rem;
+  width: 100px;
+
+  .galleryListItemImg {
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    width: max-content;
+    transition: 0.5s;
+
+    img {
+      height: 100%;
+      width: fit-content;
+    }
+  }
+
+  .galleryListItemImg:hover {
+    transition: 0.9s;
+    transform: rotate(3deg);
+  }
+}
+
+.galleryListItemInfoAlias {
+  color: $text_default_dark_color;
+  font-family: $font_default_family;
+  font-size: 0.875rem;
+}
+.galleryListItemInfoCreator {
+  color: $text_default_light_color;
+  font-family: $font_default_family;
+  font-size: 0.8rem;
+}

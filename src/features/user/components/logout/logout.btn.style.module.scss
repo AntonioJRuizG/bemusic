@@ -1,0 +1,10 @@
+@import "../../../../style/variables.scss";
+
+.mainMenuBtn {
+  background-color: white;
+  border: $border-radius-1;
+  color: $text_default_light_color;
+  cursor: pointer;
+  font-family: $font_default_family;
+  min-width: 6rem;
+}
